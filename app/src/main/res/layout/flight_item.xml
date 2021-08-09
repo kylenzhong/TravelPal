@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFlightItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/tvFlightItemDep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:textSize="18sp"
+        tools:text="Departing City" />
+
+    <TextView
+        android:id="@+id/tvFlightItemArr"
+        android:layout_width="136dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="TextView"
+        android:textSize="18sp"
+        tools:text="Arriving City" />
+
+    <TextView
+        android:id="@+id/tvFlightItemPrice"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFlightItemDep"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:layout_toEndOf="@+id/tvFlightItemDate"
+        android:textColor="#35615D"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:text="FlightPrice" />
+
+    <TextView
+        android:id="@+id/tvFlightItemAirline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFlightItemDep"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        tools:text="AirlineCarrier" />
+
+    <TextView
+        android:id="@+id/tvFlightItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFlightItemDep"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tvFlightItemAirline"
+        android:textSize="15sp"
+        tools:text="Departing Date" />
+
+    <Button
+        android:id="@+id/btnAddFlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFlightItemDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#009688"
+        android:text="ADD TO CALENDAR"
+        android:textColor="#02221F" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/tvFlightItemDep"
+        app:srcCompat="@drawable/ic_right_arrow" />
+</RelativeLayout>
